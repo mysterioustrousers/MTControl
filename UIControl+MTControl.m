@@ -203,8 +203,6 @@ static NSMutableDictionary *__controlActions;
 	[__controlActions setObject:events forKey:[self objectString]];
 
 	[self addTarget:self action:selector forControlEvents:event];
-	NSLog(@"%@", self.allTargets);
-	NSLog(@"%@", [self actionsForTarget:self forControlEvent:UIControlEventTouchDown]);
 }
 
 - (void)callBlocksForEventType:(UIControlEvents)eventType sender:(id)sender event:(UIEvent *)event
@@ -214,7 +212,7 @@ static NSMutableDictionary *__controlActions;
 		UIControlEvents controlEvent = [[eventDict objectForKey:@"Event"] intValue];
 		if (controlEvent == eventType) {
 			MTControlBlock block = [eventDict objectForKey:@"Block"];
-			block(sender, event);
+			block(event);
 		}
 	}
 }

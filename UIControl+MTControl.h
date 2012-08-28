@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Mysterious Trousers. All rights reserved.
 //
 
-typedef void (^MTControlBlock)(UIControl *sender, UIEvent *event);
+typedef void (^MTControlBlock)(UIEvent *event);
 
 @interface UIControl (MTControl)
 - (void)touchDown:(MTControlBlock)block;
