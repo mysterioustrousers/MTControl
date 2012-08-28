@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21C9D6E15ED595700311404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D6D15ED595700311404 /* UIKit.framework */; };
+		C21C9D7015ED595700311404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D6F15ED595700311404 /* Foundation.framework */; };
+		C21C9D7215ED595700311404 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D7115ED595700311404 /* CoreGraphics.framework */; };
+		C21C9D7815ED595700311404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C21C9D7615ED595700311404 /* InfoPlist.strings */; };
+		C21C9D7A15ED595700311404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C9D7915ED595700311404 /* main.m */; };
+		C21C9D7E15ED595700311404 /* MTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C9D7D15ED595700311404 /* MTAppDelegate.m */; };
+		C21C9D8115ED595700311404 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21C9D7F15ED595700311404 /* MainStoryboard_iPhone.storyboard */; };
+		C21C9D8415ED595700311404 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21C9D8215ED595700311404 /* MainStoryboard_iPad.storyboard */; };
+		C21C9D8715ED595700311404 /* MTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C9D8615ED595700311404 /* MTViewController.m */; };
+		C21C9D8F15ED595700311404 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D8E15ED595700311404 /* SenTestingKit.framework */; };
+		C21C9D9015ED595700311404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D6D15ED595700311404 /* UIKit.framework */; };
+		C21C9D9115ED595700311404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21C9D6F15ED595700311404 /* Foundation.framework */; };
+		C21C9D9915ED595700311404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C21C9D9715ED595700311404 /* InfoPlist.strings */; };
+		C21C9D9C15ED595700311404 /* MTControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C9D9B15ED595700311404 /* MTControlTests.m */; };
+		C21C9DA715ED598300311404 /* UIControl+MTControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C21C9DA615ED598300311404 /* UIControl+MTControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C21C9D9215ED595700311404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C21C9D6015ED595700311404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C21C9D6815ED595700311404;
+			remoteInfo = MTControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C21C9D6915ED595700311404 /* MTControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21C9D6D15ED595700311404 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C21C9D6F15ED595700311404 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C21C9D7115ED595700311404 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C21C9D7515ED595700311404 /* MTControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTControl-Info.plist"; sourceTree = "<group>"; };
+		C21C9D7715ED595700311404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C21C9D7915ED595700311404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C21C9D7B15ED595700311404 /* MTControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTControl-Prefix.pch"; sourceTree = "<group>"; };
+		C21C9D7C15ED595700311404 /* MTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTAppDelegate.h; sourceTree = "<group>"; };
+		C21C9D7D15ED595700311404 /* MTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTAppDelegate.m; sourceTree = "<group>"; };
+		C21C9D8015ED595700311404 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C21C9D8315ED595700311404 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C21C9D8515ED595700311404 /* MTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTViewController.h; sourceTree = "<group>"; };
+		C21C9D8615ED595700311404 /* MTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTViewController.m; sourceTree = "<group>"; };
+		C21C9D8D15ED595700311404 /* MTControlTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTControlTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C21C9D8E15ED595700311404 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C21C9D9615ED595700311404 /* MTControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTControlTests-Info.plist"; sourceTree = "<group>"; };
+		C21C9D9815ED595700311404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C21C9D9A15ED595700311404 /* MTControlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTControlTests.h; sourceTree = "<group>"; };
+		C21C9D9B15ED595700311404 /* MTControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTControlTests.m; sourceTree = "<group>"; };
+		C21C9DA515ED598300311404 /* UIControl+MTControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+MTControl.h"; sourceTree = "<group>"; };
+		C21C9DA615ED598300311404 /* UIControl+MTControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+MTControl.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C21C9D6615ED595700311404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D6E15ED595700311404 /* UIKit.framework in Frameworks */,
+				C21C9D7015ED595700311404 /* Foundation.framework in Frameworks */,
+				C21C9D7215ED595700311404 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21C9D8915ED595700311404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D8F15ED595700311404 /* SenTestingKit.framework in Frameworks */,
+				C21C9D9015ED595700311404 /* UIKit.framework in Frameworks */,
+				C21C9D9115ED595700311404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C21C9D5E15ED595700311404 = {
+			isa = PBXGroup;
+			children = (
+				C21C9D7315ED595700311404 /* MTControl */,
+				C21C9D9415ED595700311404 /* MTControlTests */,
+				C21C9D6C15ED595700311404 /* Frameworks */,
+				C21C9D6A15ED595700311404 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C21C9D6A15ED595700311404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D6915ED595700311404 /* MTControl.app */,
+				C21C9D8D15ED595700311404 /* MTControlTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C21C9D6C15ED595700311404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D6D15ED595700311404 /* UIKit.framework */,
+				C21C9D6F15ED595700311404 /* Foundation.framework */,
+				C21C9D7115ED595700311404 /* CoreGraphics.framework */,
+				C21C9D8E15ED595700311404 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C21C9D7315ED595700311404 /* MTControl */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D7C15ED595700311404 /* MTAppDelegate.h */,
+				C21C9D7D15ED595700311404 /* MTAppDelegate.m */,
+				C21C9D7F15ED595700311404 /* MainStoryboard_iPhone.storyboard */,
+				C21C9D8215ED595700311404 /* MainStoryboard_iPad.storyboard */,
+				C21C9D8515ED595700311404 /* MTViewController.h */,
+				C21C9D8615ED595700311404 /* MTViewController.m */,
+				C21C9DA515ED598300311404 /* UIControl+MTControl.h */,
+				C21C9DA615ED598300311404 /* UIControl+MTControl.m */,
+				C21C9D7415ED595700311404 /* Supporting Files */,
+			);
+			path = MTControl;
+			sourceTree = "<group>";
+		};
+		C21C9D7415ED595700311404 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D7515ED595700311404 /* MTControl-Info.plist */,
+				C21C9D7615ED595700311404 /* InfoPlist.strings */,
+				C21C9D7915ED595700311404 /* main.m */,
+				C21C9D7B15ED595700311404 /* MTControl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C21C9D9415ED595700311404 /* MTControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D9A15ED595700311404 /* MTControlTests.h */,
+				C21C9D9B15ED595700311404 /* MTControlTests.m */,
+				C21C9D9515ED595700311404 /* Supporting Files */,
+			);
+			path = MTControlTests;
+			sourceTree = "<group>";
+		};
+		C21C9D9515ED595700311404 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C21C9D9615ED595700311404 /* MTControlTests-Info.plist */,
+				C21C9D9715ED595700311404 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C21C9D6815ED595700311404 /* MTControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21C9D9F15ED595700311404 /* Build configuration list for PBXNativeTarget "MTControl" */;
+			buildPhases = (
+				C21C9D6515ED595700311404 /* Sources */,
+				C21C9D6615ED595700311404 /* Frameworks */,
+				C21C9D6715ED595700311404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTControl;
+			productName = MTControl;
+			productReference = C21C9D6915ED595700311404 /* MTControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C21C9D8C15ED595700311404 /* MTControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21C9DA215ED595700311404 /* Build configuration list for PBXNativeTarget "MTControlTests" */;
+			buildPhases = (
+				C21C9D8815ED595700311404 /* Sources */,
+				C21C9D8915ED595700311404 /* Frameworks */,
+				C21C9D8A15ED595700311404 /* Resources */,
+				C21C9D8B15ED595700311404 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C21C9D9315ED595700311404 /* PBXTargetDependency */,
+			);
+			name = MTControlTests;
+			productName = MTControlTests;
+			productReference = C21C9D8D15ED595700311404 /* MTControlTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C21C9D6015ED595700311404 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MT;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Mysterious Trousers";
+			};
+			buildConfigurationList = C21C9D6315ED595700311404 /* Build configuration list for PBXProject "MTControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C21C9D5E15ED595700311404;
+			productRefGroup = C21C9D6A15ED595700311404 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C21C9D6815ED595700311404 /* MTControl */,
+				C21C9D8C15ED595700311404 /* MTControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C21C9D6715ED595700311404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D7815ED595700311404 /* InfoPlist.strings in Resources */,
+				C21C9D8115ED595700311404 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C21C9D8415ED595700311404 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21C9D8A15ED595700311404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D9915ED595700311404 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C21C9D8B15ED595700311404 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C21C9D6515ED595700311404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D7A15ED595700311404 /* main.m in Sources */,
+				C21C9D7E15ED595700311404 /* MTAppDelegate.m in Sources */,
+				C21C9D8715ED595700311404 /* MTViewController.m in Sources */,
+				C21C9DA715ED598300311404 /* UIControl+MTControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C21C9D8815ED595700311404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21C9D9C15ED595700311404 /* MTControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C21C9D9315ED595700311404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C21C9D6815ED595700311404 /* MTControl */;
+			targetProxy = C21C9D9215ED595700311404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C21C9D7615ED595700311404 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21C9D7715ED595700311404 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C21C9D7F15ED595700311404 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21C9D8015ED595700311404 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C21C9D8215ED595700311404 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21C9D8315ED595700311404 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C21C9D9715ED595700311404 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C21C9D9815ED595700311404 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C21C9D9D15ED595700311404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C21C9D9E15ED595700311404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C21C9DA015ED595700311404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTControl/MTControl-Prefix.pch";
+				INFOPLIST_FILE = "MTControl/MTControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C21C9DA115ED595700311404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTControl/MTControl-Prefix.pch";
+				INFOPLIST_FILE = "MTControl/MTControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C21C9DA315ED595700311404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTControl.app/MTControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTControl/MTControl-Prefix.pch";
+				INFOPLIST_FILE = "MTControlTests/MTControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C21C9DA415ED595700311404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTControl.app/MTControl";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTControl/MTControl-Prefix.pch";
+				INFOPLIST_FILE = "MTControlTests/MTControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C21C9D6315ED595700311404 /* Build configuration list for PBXProject "MTControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21C9D9D15ED595700311404 /* Debug */,
+				C21C9D9E15ED595700311404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21C9D9F15ED595700311404 /* Build configuration list for PBXNativeTarget "MTControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21C9DA015ED595700311404 /* Debug */,
+				C21C9DA115ED595700311404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C21C9DA215ED595700311404 /* Build configuration list for PBXNativeTarget "MTControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21C9DA315ED595700311404 /* Debug */,
+				C21C9DA415ED595700311404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C21C9D6015ED595700311404 /* Project object */;
+}
