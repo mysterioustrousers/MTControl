@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "MTControl"
   s.version      = "0.0.1"
   s.summary      = "Attach block handlers to UIControl objects jQuery style."
-  s.homepage     = "http://EXAMPLE/MTControl"
+  s.homepage     = "https://github.com/mysterioustrousers/MTControl"
 
   # Specify the license type. CocoaPods detects automatically the license file if it is named
   # `LICENSE*.*', however if the name is different, specify it.
