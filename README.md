@@ -11,7 +11,7 @@ In your Podfile, add this line:
 
 pod? => https://github.com/CocoaPods/CocoaPods/
 
-NOTE: You may need to add `-all_load` to `Other Linker Flags` in your targets build settings if the pods library only contains categories.
+NOTE: You may need to add `-all_load` to "Other Linker Flags" in your targets build settings if the pods library only contains categories.
 
 ### Example Usage
 
@@ -35,6 +35,10 @@ Let's try another:
 	[textField editingDidBegin:^(UIEvent *event) {
 		textField.text = @"";
 	}];
+
+And to remove the block (unbind):
+
+	[button removeBlocksForControlEvents:UIControlEventTouchDown];
 
 ### Control Event Binding Methods:
 

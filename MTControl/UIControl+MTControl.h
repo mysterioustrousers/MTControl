@@ -25,4 +25,5 @@ typedef void (^MTControlBlock)(UIEvent *event);
 - (void)editingDidEndOnExit:(MTControlBlock)block;
 - (void)allTouchEvents:(MTControlBlock)block;
 - (void)allEditingEvents:(MTControlBlock)block;
+- (void)removeBlocksForControlEvents:(UIControlEvents)events;
 @end

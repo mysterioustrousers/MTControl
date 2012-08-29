@@ -220,6 +220,26 @@
 	STAssertTrue(passed, nil);
 }
 
+- (void)test_unbind
+{
+	__block BOOL passed = NO;
+
+	[_button touchDown:^(UIEvent *event) {
+		passed = YES;
+	}];
+
+	[_button sendActionsForControlEvents:UIControlEventTouchDown];
+	STAssertTrue(passed, nil);
+
+	[_button removeBlocksForControlEvents:UIControlEventTouchDown];
+
+	passed = NO;
+
+	[_button sendActionsForControlEvents:UIControlEventTouchDown];
+
+	STAssertFalse(passed, nil);
+}
+
 
 
 @end

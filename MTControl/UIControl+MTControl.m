@@ -8,6 +8,8 @@
 
 #import "UIControl+MTControl.h"
 
+#define IN_MASK(a, b) ((a & b) == b)
+
 
 
 @implementation UIControl (MTControl)
@@ -96,6 +98,17 @@ static NSMutableDictionary *__controlActions;
 - (void)allEditingEvents:(MTControlBlock)block
 {
 	[self addblock:block forEvent:UIControlEventAllEditingEvents selector:@selector(touchedAllEditingEvents:forEvent:)];
+}
+
+- (void)removeBlocksForControlEvents:(UIControlEvents)eventTypes;
+{
+	NSMutableArray *events = [__controlActions objectForKey:[self objectString]];
+	for (NSDictionary *eventDict in events) {
+		UIControlEvents controlEvent = [[eventDict objectForKey:@"Event"] intValue];
+		if (IN_MASK(eventTypes, controlEvent)) {
+			[events removeObject:eventDict];
+		}
+	}
 }
 
 
@@ -205,12 +218,12 @@ static NSMutableDictionary *__controlActions;
 	[self addTarget:self action:selector forControlEvents:event];
 }
 
-- (void)callBlocksForEventType:(UIControlEvents)eventType sender:(id)sender event:(UIEvent *)event
+- (void)callBlocksForEventType:(UIControlEvents)eventTypes sender:(id)sender event:(UIEvent *)event
 {
-	NSDictionary *events = [__controlActions objectForKey:[self objectString]];
+	NSArray *events = [__controlActions objectForKey:[self objectString]];
 	for (NSDictionary *eventDict in events) {
 		UIControlEvents controlEvent = [[eventDict objectForKey:@"Event"] intValue];
-		if (controlEvent == eventType) {
+		if (IN_MASK(eventTypes, controlEvent)) {
 			MTControlBlock block = [eventDict objectForKey:@"Block"];
 			block(event);
 		}
