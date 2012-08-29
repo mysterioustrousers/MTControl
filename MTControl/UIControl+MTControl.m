@@ -103,7 +103,7 @@ static NSMutableDictionary *__controlActions;
 - (void)removeBlocksForControlEvents:(UIControlEvents)eventTypes;
 {
 	NSMutableArray *events = [__controlActions objectForKey:[self objectString]];
-	for (NSDictionary *eventDict in events) {
+	for (NSDictionary *eventDict in [events copy]) {
 		UIControlEvents controlEvent = [[eventDict objectForKey:@"Event"] intValue];
 		if (IN_MASK(eventTypes, controlEvent)) {
 			[events removeObject:eventDict];
